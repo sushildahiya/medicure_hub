@@ -1,0 +1,76 @@
+.homeContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    position: relative;
+}
+.profileContent{
+    height:55px;
+    width: 450px;
+    position:sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin:0px;
+    border-radius: 20px 20px 0px 0px;
+}
+.profileContent img{
+    margin-top: .3em;
+    margin-right:.9em;
+}
+.medicineTab, .waterTab, .reportTab, .medicineHistoryTab, .exerciseTab, .pharmacyTab{
+    width:48%;
+    height:230px;
+    border-radius: 15px;
+    margin:auto;
+    margin-top:.4em;
+    text-decoration: none;
+}
+.medicineTab{
+    background-color: rgb(138, 138, 24);
+} 
+.waterTab{
+    background-color: rgb(167, 190, 235);
+} 
+.reportTab{
+    background-color: rgb(110, 182, 38);
+} 
+.medicineHistoryTab{
+background-color: orange;
+} 
+.exerciseTab{
+background-color:  aqua;
+}
+.pharmacyTab{
+    background-color: grey;
+}
+
+
+.medicineTabContent, .medicineTabContent1, .medicineTabContent2,.waterTabContent, .waterTabContent1,.waterTabContent2,.exerciseTabContent, .exerciseTabContent1,.exerciseTabContent2,.medicineHistoryTabContent,.medicineHistoryTabContent1,.medicineHistoryTabContent2, .pharmacyTabContent,.pharmacyTabContent1,.pharmacyTabContent2,.reportTabContent,.reportTabContent1,.reportTabContent2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.medicineTabContent, .exerciseTabContent,.medicineHistoryTabContent,.pharmacyTabContent,.reportTabContent{    
+    height: 100%;
+    justify-content: space-evenly;
+}
+.medicineTabContent2 h3,.exerciseTabContent2 h3,.reportTabContent h3{
+    padding:0px;
+    margin:0px;
+    color:white;
+}
+
+.waterTabContent2 h1{
+    color:rgb(80, 161, 236);
+    margin: 0px;
+    padding:0px;
+}
+.waterTabContent2 h3{
+    margin: 0px;
+    padding:0px;
+}
+.medicineHistoryTabContent2{
+    color:rgb(240, 193, 217);
+}

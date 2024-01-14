@@ -36,7 +36,6 @@ function Login(){
             }
             localStorage.setItem('user',JSON.stringify({...responseData.data}))
             setLogin({...responseData.data}) 
-            console.log(login)
             navigate('/')
         } catch (error) {
             setError("Network error. Please try again later.");
@@ -44,7 +43,7 @@ function Login(){
         }
     }
     return (<>
-
+    <div className={styles.container}>
             <header>
                 <img src={logo} width="100px" height="100px"/>
             </header>
@@ -59,6 +58,7 @@ function Login(){
                     <h2>New User? <Link to="/signup">Register User</Link></h2>
                 </div>
             </main>
+            </div>
     </>)
 }
 

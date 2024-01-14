@@ -1,0 +1,37 @@
+.healthDataContainer {
+    height: 100%;
+  }
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.headerContent{
+    height:15%;
+    background-color: #3586ff;
+    
+}
+.headerContent h1{
+    padding:1em 0px 0px 0px;
+    margin:0px;
+    text-align: center;
+    color:white;
+}
+.form button{
+    margin:.9em;
+    width:200px;
+    padding:.8em;
+    font-size: larger;
+    border-radius: 30px;
+    background-color: #3586ff;
+    color:white
+}
+
+.form input, .form textarea{
+    width:70%;
+    font-size: larger;
+    margin:.4em;
+    border-radius: 25px;
+    padding:.3em .3em .3em .8em;
+}

@@ -1,0 +1,39 @@
+.header{
+    position:relative;
+    width:100%;
+    height:12%;
+    background: #3586ff;
+    overflow: hidden;
+}
+.header h1{
+    color: white;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    font-size: x-large;
+    margin:.5em;
+    border-radius: 20px;
+    padding:.3em;
+}
+.form button{
+    margin-top:.9em;
+    font-size: x-large;
+    border-radius: 25px;
+    padding:.3em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.error{
+    color:red;
+    margin: 0px;
+}

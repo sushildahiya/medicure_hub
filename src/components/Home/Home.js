@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink,useNavigate } from "react-router-dom"
 import styles from './Home.module.css'
 import medicineIcon from '../../assets/images/medicine.png'
 import waterIcon from '../../assets/images/glass.png'
@@ -7,12 +7,27 @@ import userIcon from '../../assets/images/user.png'
 import historyIcon from '../../assets/images/history.png'
 import shopIcon from '../../assets/images/shop.png'
 import reportIcon from  '../../assets/images/report.png'
+import { useEffect, useState } from "react"
+import { useLoginValue } from "../context/loginContext"
 
-function Home(){
+function Home({showHealthForm}){
+    const navigate = useNavigate()
+    const {login,setLogin} = useLoginValue()
+    const handleLogout =(event)=>{
+        event.preventDefault()
+        localStorage.clear('user')
+        setLogin(null)
+    }
+    useEffect(()=>{
+        if(showHealthForm){
+            navigate('/user_data')
+          }
+    },[])
     return(
         <>
         <div className={styles.profileContent}>
-                <img src={userIcon} alt="user-img" width="50px" height="50px"/>
+            <button type="submit" onClick={handleLogout}>Logout</button>
+                <img src={userIcon} alt="user-img" width="50px" height="50px" />
         </div>
         <div className={styles.homeContainer}>
             

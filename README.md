@@ -1,8 +1,9 @@
-# Getting Started with Create React App
+# Medicure Hub - Health care web app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+##Problem Statement
+Identify one use case for elderly care (for the age group 65+) and create a working prototype to demonstrate your idea using technology known to you.
+
 
 In the project directory, you can run:
 
